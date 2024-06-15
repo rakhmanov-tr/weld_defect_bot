@@ -9,13 +9,14 @@ from ultralytics import YOLO
 from PIL import Image, ImageDraw, ImageFont
 import io
 from collections import Counter
+from config.config import TELEGRAM_TOKEN
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Замените на ваш токен
-TELEGRAM_TOKEN = 'Токен из BotFather'
+TELEGRAM_TOKEN = TELEGRAM_TOKEN
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 # Путь к модели YOLOv8s
