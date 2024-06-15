@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 # Замените на ваш токен
-TELEGRAM_TOKEN = '7384201852:AAFQAvBvNOGsBot3spqjJAw7O6unL1zovDw'
+TELEGRAM_TOKEN = 'Токен из BotFather'
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 
 # Путь к модели YOLOv8s
